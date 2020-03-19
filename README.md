@@ -54,3 +54,31 @@ class FooBar {
   }
 };
 ```
+
+#### Estrutura de Classes
+
+*ES6 / Nodejs 12.x*
+
+Classes devem ser estruturadas respeitando a convenção para métodos e propriedades, ou seja:
+
+```javascript
+class FooBar {
+  // Propriedade
+  foo = 'foo';
+
+  // Método construtor
+  constructor(foo) {
+    this.foo = foo;
+  }
+
+  // Método de classe
+  bar() {
+    return 'bar';
+  }
+
+  // Métodos "privados"
+  static helper() {
+    return 'bar';
+  }
+};
+```
